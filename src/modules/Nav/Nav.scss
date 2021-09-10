@@ -1,0 +1,31 @@
+.Nav{
+  background-color: #00722c;
+  color: white;
+  height: 3em;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: table;
+
+  &__button{
+    display:table-cell;
+    height:48px;
+    width:48px;
+    line-height:48px;
+    background-color: #111111;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 0 0;
+    cursor: pointer;
+
+    &--close{
+      content:"<"
+    }
+  }
+
+  &__title{
+    display:table-cell;
+    padding:0 0 0 10px;
+    vertical-align:middle;
+  }
+}

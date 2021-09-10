@@ -1,0 +1,14 @@
+.HaiList{
+  list-style: none;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  &__item{
+    float: left;
+    cursor: pointer;
+    cursor: hand;
+    &--tsumo{
+      margin:0 0 0 3%;
+    }
+  }
+}

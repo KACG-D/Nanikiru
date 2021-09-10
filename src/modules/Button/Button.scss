@@ -1,0 +1,15 @@
+.Button{
+  color: #fff;
+  background-color: #eb6100;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  letter-spacing: .1em;
+  border-radius: .5rem;
+  &:hover{
+    color: #fff;
+    background: #f56500;
+  }
+  &:disabled{
+    background: #888888;
+  }
+}

@@ -1,0 +1,40 @@
+.Heading{
+  &__h2{
+    height: 25px;
+    background-color: green;
+    color: white;
+    padding: 0 8px;
+    line-height:25px;
+    letter-spacing: .1em;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  }
+  &__h1{
+    margin: 0 8px 8px 8px;
+    height: 30px;
+    &::before{
+      display: table-cell;
+      background-color: gray;
+      width:5px;
+      margin: 0 8px 0 0;
+      height: 30px;
+      content: "";
+    }
+  }
+  &__children{
+    display: table-cell;
+    padding: 0 8px 0 0 ;
+    line-height: 30px;
+    &::before{
+      content: "";
+      display: inline-block;
+      width:8px;
+    }
+  }
+  &--hidden{
+    display: none;
+  }
+}

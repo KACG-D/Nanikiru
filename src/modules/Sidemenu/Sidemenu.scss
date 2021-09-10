@@ -1,0 +1,58 @@
+.Sidemenu{
+  position: fixed;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+  
+  &__menu{
+    width: 200px;
+    background-color: #eeeeee;
+    z-index: 5;
+    height: 100%;
+    padding: 56px 0 0 0;
+    transition: all 300ms 0s ease;
+    pointer-events: all;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    &--close{
+      transform: translateX(-200px);
+      pointer-events: none;
+    }
+    
+  
+  }
+  
+
+}
+.ContentHider{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color:rgba(0,0,0,0.5);
+  transition: all 300ms 0s ease;
+  pointer-events: none;
+  &--close{
+    transform:rgba(0,0,0,0);
+    pointer-events: all;
+  }
+}
+
+.MenuItem{
+  margin:8px;
+  &__text{
+    list-style-type: disc;
+    text-align: left;
+
+    &::after{
+      height: 1px;
+      width:100%;
+      background-color:gray;
+      content:"";
+      display: inline-block;
+    }
+  }
+
+  &__button{
+    text-align: center;
+  }
+}
